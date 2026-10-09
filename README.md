@@ -19,4 +19,3 @@ dotnet run
 ```
 
 Select the video file, change the suggested output name if needed, and choose **Extract Audio**. The `.m4a` file is saved next to the video. If the file name is already in use, a free variant such as `Name (1).m4a` is created automatically.
-# Extract-Audio-From-Video
