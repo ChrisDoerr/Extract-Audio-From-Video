@@ -1,6 +1,6 @@
 # Extract Audio from Video
 
-A small WPF application for Windows 11 that saves the first audio track of a local video file using `ffmpeg` as AAC audio in an M4A file.
+A small WPF GUI application for Windows 11 that saves the first audio track of a local video file using `ffmpeg` as AAC audio in an M4A file.
 
 This app is licensed under the MIT License.
 
