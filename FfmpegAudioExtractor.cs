@@ -28,7 +28,7 @@ internal sealed class FfmpegAudioExtractor
 
         var startInfo = new ProcessStartInfo
         {
-            FileName = "ffmpeg",
+            FileName = GetBundledToolPath("ffmpeg.exe"),
             UseShellExecute = false,
             RedirectStandardError = true,
             RedirectStandardOutput = true,
@@ -79,7 +79,7 @@ internal sealed class FfmpegAudioExtractor
     {
         var startInfo = new ProcessStartInfo
         {
-            FileName = "ffprobe",
+            FileName = GetBundledToolPath("ffprobe.exe"),
             UseShellExecute = false,
             RedirectStandardError = true,
             RedirectStandardOutput = true,
@@ -112,6 +112,15 @@ internal sealed class FfmpegAudioExtractor
                 ? duration
                 : null;
     }
+
+    private static string GetBundledToolPath(string executableName) =>
+        Path.Combine(
+            AppContext.BaseDirectory,
+            "tools",
+            "ffmpeg",
+            "win-x64",
+            "bin",
+            executableName);
 
     private static async Task ReadProgressAsync(
         Process process,

@@ -8,7 +8,7 @@ This app is licensed under the MIT License.
 
 - Windows 11
 - .NET 10 SDK
-- `ffmpeg` and `ffprobe`, installed and available via `PATH` (both are typically part of the same FFmpeg installation)
+- No separate FFmpeg installation is required. The application includes FFmpeg and FFprobe.
 
 ## Run
 
@@ -19,3 +19,5 @@ dotnet run
 ```
 
 Select the video file, change the suggested output name if needed, and choose **Extract Audio**. The `.m4a` file is saved next to the video. If the file name is already in use, a free variant such as `Name (1).m4a` is created automatically.
+
+The FFmpeg binaries and their LGPL license are in `tools/ffmpeg/win-x64`. Version and source details are recorded in that folder's README.
