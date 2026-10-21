@@ -13,11 +13,4 @@
     <Resource Include="extract-audio-from-video-app-icon.ico" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Content Include="tools\ffmpeg\win-x64\**\*">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-  </ItemGroup>
-
 </Project>

@@ -80,7 +80,7 @@ public partial class MainWindow : Window
         {
             ShowError(
                 "ffmpeg/ffprobe not found",
-                "The bundled ffmpeg or ffprobe could not be started. Verify that the application files are complete and compatible with this computer.");
+                "The application could not start ffmpeg or ffprobe. Install ffmpeg and make sure both programs are available via PATH.");
         }
         catch (FfmpegExecutionException exception)
         {
